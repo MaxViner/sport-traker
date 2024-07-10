@@ -1,0 +1,43 @@
+.select {
+  position: relative;
+  background-color: rgb(46, 46, 46);
+  border-radius: 12px;
+}
+
+.selectedValue {
+  cursor: pointer;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.optionsList {
+  position: absolute;
+  top: 100%;
+  list-style: none;
+  left: 0;
+  width: 100%;
+  max-height: 0;
+  transition: max-height 0.3s ease; // Smooth transition effect
+  background-color: #1f1f1f;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 6;
+  border-radius: 0 0 4px 4px;
+}
+
+.option {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #242424;
+
+  transition: background-color 0.3s; // Smooth transition for background color change
+}
+
+.option:hover {
+  background-color: #351c1cd4;
+}
+
+.open {
+  max-height: 200px; 
+}

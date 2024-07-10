@@ -1,0 +1,77 @@
+.Wrapper{
+    margin: 16px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: var(--background-primary);
+   border-radius: 10px;
+   color: whitesmoke;
+   padding: 10px;
+}
+.Cell{
+    border: 1px solid rgba(0, 0, 0, 0.085);
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+   cursor: pointer;
+
+}
+.CellsWrapper{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+}
+.monthName_and_eyar{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.dayOfWeek_year{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.WorkoutScheduler__Header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid whitesmoke;
+}
+.DayNameCell{
+    text-align: center;
+}
+.DayNamesRow{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    justify-content: space-around;
+    padding: 16px;
+
+}
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.btn{
+    font-size: 24px;
+    background: rgba(28, 28, 28, 0.815);
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    border: none;
+    color: rgba(255, 0, 0, 0.962);
+    box-shadow: 1px 1px 5px aqua;
+}
+.ActiveCell{
+    color: red;
+    border-bottom: 2px solid red;
+}
+.selectedCeil{
+    color: aqua;
+    border-bottom: 2px solid rgb(0, 208, 255);
+    transition: 0.5s ease-in-out;
+
+}
